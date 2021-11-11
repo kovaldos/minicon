@@ -3,14 +3,42 @@
 // @media screen and (max-width: 1440px)
 
 @media screen and (max-width: 1280px)
+
+    .section
+        margin: 100px 0 0 0
+
     .header
-        &__menu-link
-            font-size: 16px
-            margin: 0
-            padding: 10px
+        &__list
+            &-link
+                font-size: $text-font-size-desktop
+                margin: 0
+                padding: 10px
+
+    .scope-of-use
+        &__content
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+            &-title
+                min-height: 63px
+                padding: 20px 0 0 0
+
+    .for-liquid
+        &__content
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    .about-us
+        &__text-block
+            margin: 0 0 0 30px
+
+    .news
+        &__content
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+
+    .subscribe
+        &__form
+            &-inputs
+                flex: auto
+                width: 100%
 
     // footer
-
     .footer
         margin: 50px 0 0 0
         &__row
@@ -19,10 +47,91 @@
         &__col
             margin-bottom: 30px
 
+@media screen and (max-width: 1024px)
+
+    .container
+        padding: $container-padding-tablet
+
+    .section
+        margin: 70px 0 0 0
+        &__title
+            font-size: $font-size-section-title-tablet
+    .header
+        &__logo-box
+            max-width: 190px
+
+    .main-banner
+        &__heading
+            max-width: 435px
+            margin: 85px 0 0 0
+
+    .scope-of-use
+        &__content
+            grid-template-columns: repeat(auto-fit, minmax(295px, 1fr))
+            &-link
+                min-height: 250px
+
+    .for-liquid
+        &__content
+            grid-template-columns: repeat(auto-fit, minmax(345px, 1fr))
+            padding: 0 80px
+            &-link
+                height: 250px
+
+    .about-us
+        &__content
+            position: relative
+            justify-content: flex-start
+        &__slider
+            @include flex-jcfs-aifs
+            width: 100%
+        .mySwiper
+            width: 300px
+        &__text-block
+            flex: auto
+            width: 100%
+        &__text-box
+            margin: 0 0 25px 0
+        &__benefits
+            position: absolute
+            top: 110%
+            left: 0
+            width: 100%
+            &-item
+                padding: 0 5px
+            &-title
+                font-size: $text-font-size-desktop
+
+    .manufacturers
+        margin: 220px 0 0 0
+
+    .news
+        &__content
+            grid-template-columns: repeat(auto-fit, minmax(345px, 1fr))
+            padding: 0 80px
+    .subscribe
+        &__form
+            margin: 35px 0 0 0
+            &-inputs
+                flex-direction: column
+                align-items: flex-start
+            &-input,
+            &-input#tel
+                max-width: 400px
+
 @media screen and (max-width: 768px)
 
     .section
         margin: 35px 0 0 0
+
+    .home-catalog
+        &__content
+            padding: 0 80px
+    .about-us
+        &__benefits
+            top: 100%
+    .manufacturers
+        margin: 195px 0 0 0
 
     //footer
 
@@ -31,8 +140,36 @@
         padding: $container-padding-mob
     .section
         &__title
-            // font-size: $section-title-mobile
+            font-size: $font-size-section-title-mob
 
+    .home-catalog
+        &__content
+            padding: 0
+
+    .for-liquid
+        &__content
+            padding: 0
+
+    .news
+        &__content
+            padding: 0
+
+    .about-us
+        &__content
+            flex-direction: column-reverse
+        &__text-block
+            margin: 0
+        &__benefits
+            top: 105%
+
+    .manufacturers
+        margin: 220px 0 0 0
+    .subscribe
+        &__form
+            &-inputs
+                margin: 0
+            &-input
+                margin: 0 0 15px 0
     // footer 
     .footer
         &__row

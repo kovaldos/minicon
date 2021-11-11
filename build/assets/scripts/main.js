@@ -132,7 +132,7 @@ const swiper = new Swiper(".mySwiper", {
   direction: "horizontal",
   loop: true,
   autoplay: true,
-  grabCursor: true,
+  // grabCursor: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
 
@@ -140,10 +140,12 @@ const swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    clickable: true
   },
 });
 
 // slider1 End
+
 
 
 // Accordion Start

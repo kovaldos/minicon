@@ -3,14 +3,14 @@ $siteWidth: 1920px
 $container-max-width: 1250px
 $container-width: 100%
 $container-padding: 0 40px
-$container-padding-tablet: 0 20px
+$container-padding-tablet: 0 25px
 $container-padding-mob: 0 15px
 
 // Шрифт
 $font-primary: "Arimo", sans-serif
 $text-font-size-desktop: 16px
-// $text-font-size-fablet: 15px
-// $text-font-size-mobile: 14px
+$text-font-size-fablet: 15px
+$text-font-size-mobile: 14px
 $font-size-section-title: 36px
 $font-size-section-title-tablet: 28px
 $font-size-section-title-mob: 22px
@@ -21,6 +21,7 @@ $color-Black: #000000
 $color-Black--footer-bg: #2D2D2D
 $color-White: #ffffff
 $color-placeholder: #ADADAD
+$color-Gray-1: #636363
 $color-Gray--header: #6C6966
 $color-Red-primary: #D53834
 $color-Red-red-btn: #D24A43
@@ -44,6 +45,16 @@ $color-Error: #881818d2
 	display: flex
 	justify-content: center
 	align-items: center
+
+@mixin flex-jcsb-aifs
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+
+@mixin flex-jcfs-aifs
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
 
 @mixin flex-fxdc-jcfs-aifs
 	display: flex
