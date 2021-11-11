@@ -1,0 +1,173 @@
+extends ../template
+
+block variables
+    - var title = 'Главная'
+    - var contactForm = false
+
+block content
+    .wrapper
+        main.main
+            section.section.main-banner
+                .container.main-banner__container
+                    .main-banner__img-box 
+                        img.main-banner__img(src="assets/images/main-banner-bg.png" alt="Фото насоса")
+                    .main-banner__heading 
+                        h1.main-banner__title Поставки объёмных насосов&emsp;
+                            span.main-banner__span для вязкой, абразивной, агрессивной жидкости и&nbsp;запасных частей.
+                    a.main-banner__btn.red-btn(href="catalog.html") Каталог
+            section.section.home-catalog
+                .container.home-catalog__container
+                    .section__heading.home-catalog__heading
+                        h2.section__title Каталог
+                        a.section__link-to-all.home-catalog__link-to-all(href="catalog.html") Смотреть все
+                    .home-catalog__content
+                        a.home-catalog__content-item(href="#")
+                            .home-catalog__content-img-box 
+                                img.home-catalog__content-img(src="assets/images/home-catalog-content-img1.png" alt="Фото элемента каталога")
+                            .home-catalog__content-title
+                                span Винтовые насосы
+                        a.home-catalog__content-item(href="#")
+                            .home-catalog__content-img-box  
+                                img.home-catalog__content-img(src="assets/images/home-catalog-content-img2.png" alt="Фото элемента каталога")
+                            .home-catalog__content-title
+                                span Дозирующие насосы
+                        a.home-catalog__content-item(href="#")
+                            .home-catalog__content-img-box  
+                                img.home-catalog__content-img(src="assets/images/home-catalog-content-img3.png" alt="Фото элемента каталога")
+                            .home-catalog__content-title
+                                span Импеллерные насосы
+                        a.home-catalog__content-item(href="#")
+                            .home-catalog__content-img-box  
+                                img.home-catalog__content-img(src="assets/images/home-catalog-content-img4.png" alt="Фото элемента каталога")
+                            .home-catalog__content-title
+                                span Перистальтические насосы
+                        a.home-catalog__content-item(href="#")
+                            .home-catalog__content-img-box  
+                                img.home-catalog__content-img(src="assets/images/home-catalog-content-img5.png" alt="Фото элемента каталога")
+                            .home-catalog__content-title
+                                span Компактные винтовые насосы
+                        a.home-catalog__content-item(href="#")
+                            .home-catalog__content-img-box  
+                                img.home-catalog__content-img(src="assets/images/home-catalog-content-img6.png" alt="Фото элемента каталога")
+                            .home-catalog__content-title
+                                span Запчасти для насосов
+            section.section.scope-of-use
+                .container.scope-of-use__container
+                    .section__heading.scope-of-use__heading
+                        h2.section__title Сферы применения
+                        a.section__link-to-all.scope-of-use__link-to-all(href="catalog.html") Смотреть все
+                    .scope-of-use__content
+                        .scope-of-use__content-item
+                            a.scope-of-use__content-link(href="#")
+                                svg.scope-of-use__content-icon(width="80" height="80")
+                                    use(xlink:href="./assets/images/sprite.svg#scope-of-use-img1" alt="")
+                            .scope-of-use__content-title 
+                                span Очистные сооружения
+                        .scope-of-use__content-item
+                            a.scope-of-use__content-link(href="#")
+                                svg.scope-of-use__content-icon(width="80" height="80")
+                                    use(xlink:href="./assets/images/sprite.svg#scope-of-use-img2" alt="")
+                            .scope-of-use__content-title 
+                                span Бумажная промышленность
+                        .scope-of-use__content-item
+                            a.scope-of-use__content-link(href="#")
+                                svg.scope-of-use__content-icon(width="80" height="80")
+                                    use(xlink:href="./assets/images/sprite.svg#scope-of-use-img3" alt="")
+                            .scope-of-use__content-title 
+                                span Горная промышленность
+                        .scope-of-use__content-item
+                            a.scope-of-use__content-link(href="#")
+                                svg.scope-of-use__content-icon(width="80" height="80")
+                                    use(xlink:href="./assets/images/sprite.svg#scope-of-use-img4" alt="")
+                            .scope-of-use__content-title 
+                                span Пищевая промышленность
+            section.section.for-liquid
+                .container.for-liquid__container
+                    .section__heading.for-liquid__heading
+                        h2.section__title Насосы для жидкостей
+                        a.section__link-to-all.for-liquid__link-to-all(href="catalog.html") Смотреть все
+                    .for-liquid__content
+                        .for-liquid__content-item
+                            a.for-liquid__content-link(href="#")
+                                .for-liquid__content-img-box
+                                    img.for-liquid__content-img(src="assets/images/for-liquid-img1.png", alt="Фото изделия")
+                            .for-liquid__content-title 
+                                span Для абразивной жидкости
+                                ul.for-liquid__content-list
+                                    li.for-liquid__content-list-item Осадок
+                                    li.for-liquid__content-list-item Известь
+                                    li.for-liquid__content-list-item Шлам
+                        .for-liquid__content-item
+                            a.for-liquid__content-link(href="#")
+                                .for-liquid__content-img-box
+                                    img.for-liquid__content-img(src="assets/images/for-liquid-img2.png", alt="Фото изделия")
+                            .for-liquid__content-title 
+                                span Для вязкой жидкости
+                                ul.for-liquid__content-list
+                                    li.for-liquid__content-list-item Флокулянт
+                                    li.for-liquid__content-list-item Крахмал 
+                                    li.for-liquid__content-list-item Клей
+                        .for-liquid__content-item
+                            a.for-liquid__content-link(href="#")
+                                .for-liquid__content-img-box
+                                    img.for-liquid__content-img(src="assets/images/for-liquid-img3.png", alt="Фото изделия")
+                            .for-liquid__content-title 
+                                span Для агрессивной жидкости
+                                ul.for-liquid__content-list
+                                    li.for-liquid__content-list-item Коагулянт
+                                    li.for-liquid__content-list-item Кислота
+                                    li.for-liquid__content-list-item Щелочь
+            section.section.subscribe
+                .container.subscribe__container
+                    .section__heading.subscribe__heading 
+                        h2.section__title.subscribe__title Заказать обратный звонок
+                        h3.section__sub-title.subscribe__sub-title Заполните форму ниже и мы свяжемся с вами в ближайшее время.
+                    form.subscribe__form(action="#")
+                        .subscribe__form-inputs
+                            input.subscribe__form-input(type="text" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]{1,20}" title="Имя может содержать только русские или латинские буквы, быть не короче 1 и не длиннее 20 символов")
+                            input.subscribe__form-input#tel(type="tel" placeholder="Телефон" required)
+                            button.subscribe__btn.red-btn.modal__link(type="submit" data-href="#") заказать
+                        .subscribe__agreement
+                            .subscribe__agreement-text Нажимая на кнопку, Вы даёте согласие на обработку 
+                                a.subscribe__agreement-link(href="#") персональных данных
+            section.section.about-us
+                .container.about-us__container
+                    .about-us__content 
+                        .about-us__slider
+                            .mySwiper.swiper-container
+                                .swiper-wrapper 
+                                    .swiper-slide 
+                                        .about-us__slider-item 
+                                            img.about-us__slider-img(src="assets/images/about-us-slide1.png", alt="карточка слайда")
+                                    .swiper-slide 
+                                        .about-us__slider-item 
+                                            img.about-us__slider-img(src="assets/images/about-us-slide1.png", alt="карточка слайда")
+                                    .swiper-slide 
+                                        .about-us__slider-item 
+                                            img.about-us__slider-img(src="assets/images/about-us-slide1.png", alt="карточка слайда")
+                                .swiper-pagination
+                        .about-us__text-block 
+                            .section__heading.about-us__heading 
+                                h2.section__title.about-us__title О нас
+                            .about-us__text-box 
+                                p.about-us__text Компания «Миникон» — это дистрибьютор европейских производителей промышленного насосного оборудования и запасных частей. Нашими услугами пользуются клиенты с различных регионов Российской Федерации: Москвы и Московской области, Урала, Перми, Челябинска, Тюмени, Уфы, Санкт-Петербурга. Мы сотрудничаем с проектными организациями, сервисными компаниями муниципальными предприятиями и научными институтами.
+                                p.about-us__text Наша организация была основана в Санкт-Петербурге 10 лет назад. Основной деятельностью является поставка и обслуживание объемных насосов: эксцентрико-шнековых или винтовых, перистальтических, мембранных, включая поставку запасных частей к ним.
+                        .about-us__benefits-block 
+                            .about-us__benefits-item 
+                                .about-us__benefits-img-box 
+                                    svg.about-us__benefits-icon(width="60" height="60")
+                                        use(xlink:href="./assets/images/sprite.svg#benefits-icon1" alt="иконка документа с печатью")
+                                .about-us__benefits-title 
+                                    span.about-us__benefits-span Предоставляем гарантию
+                            .about-us__benefits-item 
+                                .about-us__benefits-img-box 
+                                    svg.about-us__benefits-icon(width="60" height="60")
+                                        use(xlink:href="./assets/images/sprite.svg#benefits-icon2" alt="иконка автомобиля доставки")
+                                .about-us__benefits-title 
+                                    span.about-us__benefits-span Осуществляем курьерскую доставку
+                            .about-us__benefits-item 
+                                .about-us__benefits-img-box 
+                                    svg.about-us__benefits-icon(width="60" height="60")
+                                        use(xlink:href="./assets/images/sprite.svg#benefits-icon3" alt="иконка рукопожатия")
+                                .about-us__benefits-title 
+                                    span.about-us__benefits-span Приветствуем появление новых диллеров

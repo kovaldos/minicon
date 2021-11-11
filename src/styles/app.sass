@@ -1,0 +1,72 @@
+@import ./common/_vars
+@import "./common/fonts.scss"
+@import "./common/_nullstyle.scss"
+@import ./pages/map
+
+body
+	min-width: 320px
+	font-family: $font-primary
+	font-weight: normal
+	font-style: normal
+	line-height: 1.5 em
+	font-size: $text-font-size-desktop
+	color: $color-Black
+	display: flex
+	flex-direction: column
+
+body._lock,
+body._locked
+	overflow: hidden
+
+button
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+
+.wrapper
+	max-width: $siteWidth
+	@include width-height-100-percent
+	margin: 0 auto
+	flex: 1 1 auto
+
+.container
+	max-width: $container-max-width
+	width: 100%
+	margin: 0 auto
+	padding: $container-padding
+
+._display-none
+	display: none
+
+.red-btn
+	background-color: $color-Red-red-btn
+	border-radius: 50px
+	color: $color-White
+	font-size: 14px
+	line-height: 16px
+	text-transform: uppercase
+	transition: all 0.3s ease 0s
+	&:hover
+		opacity: 0.9
+
+@import ./common/header
+@import ./pages/index
+@import ./pages/catalog
+@import ./pages/good-card
+@import ./pages/not-found
+@import ./common/footer
+@import ./common/modal
+@import ./common/_adaptive
+
+// @media screen and (max-width: 1274px) {
+
+// }
+
+// @media screen and (max-width: 960px) {
+
+// }
+
+// @media screen and (max-width: 768px) {
+
+// }

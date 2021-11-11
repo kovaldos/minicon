@@ -1,0 +1,239 @@
+extends ../template
+
+block variables
+    - var title = 'Футболка чёрная с логотипом'
+    - var contactForm = false
+
+block content
+    .wrapper
+        main.main
+            section.section.good-card
+                .container.good-card__container
+                    .section__heading
+                        h1.section__title Футболка чёрная с логотипом 
+                    .good-card__content
+                        .good-card__images
+                            .swiper-container.slider-vertical
+                                .swiper-button-prev
+                                    svg.slider3__btn-prev(width="50" height="50")
+                                        use(xlink:href="./assets/images/sprite.svg#swiper-arrow-prev" alt="Кнопка влево")
+                                .swiper-button-next
+                                    svg.slider3__btn-next(width="50" height="50")
+                                        use(xlink:href="./assets/images/sprite.svg#swiper-arrow-next" alt="Кнопка вправо")
+                                .swiper-wrapper 
+                                    .swiper-slide
+                                        .slider-vertical__item 
+                                            .slider-vertical__img-box 
+                                                img.slider-vertical__img(src="assets/images/good-card-img-1.jpg" alt="Фото модели в чёрной футболке" data-zoomable)
+                                    .swiper-slide
+                                        .slider-vertical__item 
+                                            .slider-vertical__img-box 
+                                                img.slider-vertical__img(src="assets/images/good-card-img-2.jpg" alt="Фото модели в чёрной футболке" data-zoomable)
+                                    .swiper-slide
+                                        .slider-vertical__item 
+                                            .slider-vertical__img-box 
+                                                img.slider-vertical__img(src="assets/images/good-card-img-3.jpg" alt="Фото модели в чёрной футболке" data-zoomable)
+                        .good-card__info
+                            .good-card__heading 
+                                h2.good-card__title Футболка черная с логотипом
+                                small.good-card__vendor-code Артикул: 
+                                small.good-card__vendor-code 113263RS502
+                            .good-card__price
+                                span.number-spaced 3500
+                                span &nbsp;&#8381;
+                            .good-card__add-to-cart-block 
+                                form.good-card__form(action="#")
+                                    small.good-card__available-colors Доступные цвета
+                                    .good-card__form-inputs
+                                        label.good-card__label
+                                            input(type="radio" name="available colors" value="1")
+                                            span.span01
+                                        label.good-card__label
+                                            input(type="radio" name="available colors" value="2")
+                                            span.span02
+                                    .good-card__select-wrapper
+                                        select.good-card__select(name="choose size")
+                                            option(value="0") Выберите размер
+                                            option(value="1") xxs
+                                            option(value="2") xs
+                                            option(value="3") s
+                                            option(value="4") s/m
+                                            option(value="5") m
+                                            option(value="6") m/l
+                                            option(value="7") l
+                                            option(value="8") l/xl
+                                            option(value="9") xl
+                                            option(value="10") xl/xxl
+                                            option(value="11") xxl
+                                            option(value="12") xxl/xxxl
+                                            option(value="13") xxxl
+                                        .good-card__select-icon
+                                            svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M8.99996 12C8.82472 12.0003 8.6549 11.9393 8.51996 11.8275L4.01996 8.07746C3.8668 7.95016 3.77048 7.76723 3.7522 7.56891C3.73391 7.37059 3.79516 7.17312 3.92246 7.01996C4.04977 6.8668 4.2327 6.77048 4.43102 6.7522C4.62934 6.73391 4.8268 6.79516 4.97996 6.92246L8.99996 10.2825L13.02 7.04246C13.0967 6.98016 13.185 6.93364 13.2797 6.90557C13.3745 6.87749 13.4738 6.86842 13.5721 6.87888C13.6704 6.88933 13.7656 6.9191 13.8523 6.96648C13.9391 7.01386 14.0156 7.07792 14.0775 7.15496C14.1461 7.23208 14.1982 7.32255 14.2303 7.4207C14.2624 7.51886 14.2738 7.62258 14.264 7.72538C14.2541 7.82818 14.2231 7.92783 14.173 8.0181C14.1228 8.10837 14.0546 8.1873 13.9725 8.24996L9.47246 11.8725C9.33365 11.9666 9.16729 12.0115 8.99996 12Z" fill="black")
+                                    button.good-card__btn(type="submit") добавить в корзину
+                            .good-card__size-table 
+                                a.good-card__link-to-size-table(href="#") Таблица размеров
+                            .good-card__benefits 
+                                .good-card__benefit 
+                                    .good-card__benefit-img-box
+                                        svg(width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M1.83325 5.5L6.08325 9.75L13.1666 1.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    .good-card__benefit-text Курьером — примерка бесплатно
+                                .good-card__benefit 
+                                    .good-card__benefit-img-box
+                                        svg(width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M1.83325 5.5L6.08325 9.75L13.1666 1.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    .good-card__benefit-text В пункты выдачи доставка бесплатно
+                                .good-card__benefit 
+                                    .good-card__benefit-img-box
+                                        svg(width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M1.83325 5.5L6.08325 9.75L13.1666 1.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    .good-card__benefit-text Обмен и возврат в течении 14 дней
+                                .good-card__benefit 
+                                    .good-card__benefit-img-box
+                                        svg(width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M1.83325 5.5L6.08325 9.75L13.1666 1.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                    .good-card__benefit-text Сертификат доверия
+                            .good-card__tabs.tabs
+                                nav.good-card__nav
+                                    .good-card__tabs-navbar
+                                        a.good-card__tabs-switch.tabs__link(href="#block01")  Описание
+                                        a.good-card__tabs-switch.tabs__link(href="#block02")  Задать вопрос
+                                        a.good-card__tabs-switch.tabs__link(href="#block03")  Отзывы
+                                        a.good-card__tabs-switch.tabs__link(href="#block04")  Доставка
+                                .good-card__tabs-block.tabs__item#block01   
+                                    p.good-card__tabs-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam commodi reiciendis quasi corporis quos dolorem quaerat consectetur nemo fuga, eligendi veniam sapiente quisquam
+                                    p.good-card__tabs-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore vel error debitis commodi sint dolores quas a porro illum.
+                                .good-card__tabs-block.tabs__item#block02
+                                    p.good-card__tabs-text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut vitae architecto error cumque exercitationem voluptatum neque magni impedit, placeat eos sit, laudantium voluptatibus enim quibusdam totam similique numquam fuga autem.
+                                .good-card__tabs-block.tabs__item#block03    
+                                    p.good-card__tabs-text Lorem ipsum dolor sit amet consectetur adipisicing elit. At veritatis alias recusandae corrupti voluptatem quidem culpa ducimus vero modi deserunt?
+                                .good-card__tabs-block.tabs__item#block04    
+                                    p.good-card__tabs-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo aspernatur qui? Cumque deserunt commodi mollitia dolores placeat ducimus vel consequuntur expedita esse ex! Sequi! 
+
+            section.section.additional.section__slider
+                .container
+                    .section__heading.slider__heading 
+                        h2.section__title Вам может понравиться
+                    .additional__slider
+                        .swiper-container.slider3
+                            .swiper-pagination
+                            .swiper-button-prev
+                                svg.slider3__btn-prev(width="50" height="50")
+                                    use(xlink:href="./assets/images/sprite.svg#swiper-arrow-prev" alt="Кнопка влево")
+                            .swiper-button-next
+                                svg.slider3__btn-next(width="50" height="50")
+                                    use(xlink:href="./assets/images/sprite.svg#swiper-arrow-next" alt="Кнопка вправо")
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-5.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией 
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381;
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-6.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381; 
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-7.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381;
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-8.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381;
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-1.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией 
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381;
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-2.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381; 
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-3.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381;
+                                .swiper-slide
+                                    .slider3__item
+                                        .add-to-cart__box 
+                                            a.add-to-cart__link(href="#") Добавить в корзину 
+                                        .slider3__fav-img-box.fav-btn 
+                                            svg.slider3__fav-img(width="17" height="16")
+                                                use(xlink:href="./assets/images/sprite.svg#heart-favorite" alt="Иконка сердечка")
+                                        .slider3__img-box
+                                            img.slider3__img(src="assets/images/slider3-img-4.jpg" alt="Картинка в слайде")
+                                        .slider3__text-block 
+                                            .slider3__text-box
+                                                p.slider3__text Кроссовки черные на высокой подошве с молнией
+                                                span.slider3__price.number-spaced 3500
+                                                span.slider3__currency &nbsp; &#8381;

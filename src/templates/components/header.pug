@@ -1,0 +1,75 @@
+header.header
+	.container.header__container
+		.header_top
+			.header__logo-box
+				a.header__logo-link(href="home-page.html")
+					img(src="assets/images/logo.png" alt="Логотип Миникон").header__logo-img
+			.header__search 
+				input.header__search-input#search(type="search" name="header search" placeholder="Поиск")
+				button.header__search-btn
+					svg.header__search-icon(width="20" height="20")
+						use(xlink:href="./assets/images/sprite.svg#search-icon" alt="Иконка лупы")
+			.header__mail-us
+				a.header__mail-us-link(href="mailto:info@minikon.ru") 
+					svg.header__mail-us-icon(width="28" height="20")
+						use(xlink:href="./assets/images/sprite.svg#mail-us-icon" alt="Иконка конверта")
+					span info@minikon.ru
+		.header__menu.menu
+			.container.header__menu-container
+				.header__menu-icon.menu__icon
+					span  
+				nav.header__menu-body.menu__body
+					ul.header__list.menu__list
+						li.header__list-item.menu__item
+							a(href="catalog.html").header__list-link.menu__link Каталог
+						li.header__list-item.menu__item
+							a(href="brands.html").header__list-link.menu__link Бренды
+						li.header__list-item.menu__item
+							a(href="about-us.html").header__list-link.menu__link О нас
+						li.header__list-item.menu__item
+							a(href="use.html").header__list-link.menu__link Применение
+						li.header__list-item.menu__item
+							a(href="documentation.html").header__list-link.menu__link Документация
+						li.header__list-item.menu__item
+							a(href="news.html").header__list-link.menu__link Новости
+						li.header__list-item.menu__item
+							a(href="contacts.html").header__list-link.menu__link Контакты
+
+	nav.breadcrumbs
+		.container.breadcrumbs__container 
+			.breadcrumbs__content 
+				ul.breadcrumbs__list
+					li.breadcrumbs__item
+						a.breadcrumbs__link(href="home-page.html") Главная
+							span &nbsp;/&nbsp;
+					li.breadcrumbs__item
+						a.breadcrumbs__link._current(href="#") Мужчинам&nbsp;
+
+	//- nav.sub-menu
+	//- 	.container.sub-menu__container
+	//- 		ul.sub-menu__list.sub-menu__list_for-men
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Обувь
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Одежда
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Аксессуары
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Новинки
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Sale
+	//- 		//- Ниже оверкод для показа верстки. При натяжке на БУС не понадобистся.
+	//- 		ul.sub-menu__list.sub-menu__list_collections._hidden
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Yoga style
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Running
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Hard sport
+	//- 		ul.sub-menu__list.sub-menu__list_kinds-of-sports._hidden
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Йога
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Бег
+	//- 			li.sub-menu__item
+	//- 				a.sub-menu__link(href="#") Легкая атлетика	

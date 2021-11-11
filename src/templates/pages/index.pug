@@ -1,0 +1,31 @@
+extends ../template
+
+block variables
+    - var title = 'Карта разработки сайта'
+
+block content
+    .map.wrapper
+        .container
+            .map__logo-box 
+                a.header__logo-link(href="#")
+                    img(src="assets/images/logo.png", alt="Логотип Миникон").header__logo-img
+            table.map-table
+                tbody
+                    tr
+                        td
+                            a.map-table__link(href="home-page.html" target="_blank") Главная
+                    tr
+                        td
+                            a.map-table__link(href="catalog.html" target="_blank") Каталог
+                    tr
+                        td
+                            a.map-table__link(href="good-card.html" target="_blank") Карточка товара
+
+                    //- tr
+                    //-     td
+                    //-         a.map-table__link.modal__link(href="#modal02") Вход (modal)
+                    //-     td
+                    //-         a.map-table__link.modal__link(href="#modal03") Регистрация (modal)
+                    //- tr
+                    //-     td
+                    //-         a.map-table__link(href="not-found.html" target="_blank") 404

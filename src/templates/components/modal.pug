@@ -1,0 +1,43 @@
+.modal#modal01
+    .modal__body
+        .modal__content.modal__search
+            button.modal__close.close-modal(href="#")
+                svg(width="24" height="24")
+                    use(xlink:href="./assets/images/sprite.svg#close-btn")
+            form.modal__search-form(action="#")
+                input(type="search" placeholder="Что вы ищете?")
+                a.modal__search-button(href="#")
+                    svg(width="21" height="21")
+                        use(xlink:href="./assets/images/sprite.svg#search-icon")
+.modal.modal__sign-in#modal02
+    .modal__body.modal__sign-in-body
+        .modal__content.modal__sign-in-content
+            button.modal__close.close-modal(href="#")
+                svg(width="24" height="24")
+                    use(xlink:href="./assets/images/sprite.svg#close-btn")
+            p.modal__title.modal__sign-in-title Вход
+            form.modal__form.modal__sign-in-form(action="#")
+                input#sign-in-input(type="tel" placeholder="Телефон" required)
+                input(type="password" placeholder="Пароль" required)
+                .modal__btn-block.modal__sign-in-btn-block
+                    button(type="submit").modal__sign-in-btn-in Войти
+                    a.modal__link.modal__sign-in-btn-up(href="#modal03") зарегистрироваться
+                .modal__sign-in-if-forget
+                    p.if-forget__text Забыли пароль? 
+                        a.if-forget__link(href="#")  Восстановить пароль
+.modal.modal-done#modal03
+    .modal__body.modal__sign-up-body
+        .modal__content.modal__sign-up-content
+            button.modal__close.close-modal(href="#")
+                svg(width="24" height="24")
+                    use(xlink:href="./assets/images/sprite.svg#close-btn")
+            p.modal__title.modal__sign-up-title Регистрация
+            form.modal__form(action="#")
+                input(type="text", name="sign-up" placeholder="Имя" required)
+                input(type="text", name="sign-up" placeholder="Фамилия")
+                input#sign-up-input(type="tel" placeholder="Телефон" required)
+                input(type="password" placeholder="Пароль" required)
+                input(type="password" placeholder="Повторите пароль" required)
+                .modal__btn-block.modal__sign-in-btn-block.modal__sign-up-btn-block
+                    a.modal__link(href="#modal02").modal__sign-in-btn-in.modal__sign-up-btn-in Войти
+                    button.modal__sign-in-btn-up.modal__sign-up-btn-up(type="submit") зарегистрироваться

@@ -1,0 +1,159 @@
+@import ../common/_vars
+
+.goods
+    margin: 28px 0 0 0
+    &__content
+        display: flex
+        justify-content: space-between
+        margin: 65px 0 0 0
+        overflow: hidden
+    &__filter-box
+        flex: 0 0 25%
+        padding: 0 10px 0 0
+    &__filter-form
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+    &__filter-label
+        display: inline-block
+        position: relative
+        margin: -10px 0 27px 0
+        padding: 10px 0
+        cursor: pointer
+        max-width: 60%
+        &:hover
+            text-decoration: underline
+    &__filter-input
+        position: absolute
+        visibility: hidden
+        font-size: 0
+        pointer-events: none
+        user-slect: none
+        opacity: 0
+    &__filter-span
+        font-size: 18px
+        line-height: 21px
+        white-space: nowrap
+    &__items
+        flex: 0 0 75%
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
+        justify-items: end
+        grid-column-gap: 10px
+        grid-row-gap: 50px
+        overflow: hidden
+    &__item
+        width: 100%
+        max-width: 343px
+        position: relative
+        &:hover> .add-to-cart__box
+            visibility: visible
+            opacity: 1
+            z-index: 1
+        &:hover
+            .goods__img-box
+                filter: brightness(0.7)
+                z-index: 0
+                transition: all 0.3s ease 0s
+    &__img-box
+        max-width: 343px
+        max-height: 447px
+        width: 100%
+    &__text-block
+        min-height: 58px
+        margin: 15px 0 0 0
+
+    .add-to-cart
+        &__box
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            transition: all 0.3s ease 0s
+            visibility: hidden
+            opacity: 0
+        &__link
+            max-width: 185px
+            width: 100%
+            min-height: 40px
+            border-radius: 5px
+            // background-color: $color-White
+            margin: 0 10px
+            font-size: 14px
+            line-height: 150%
+            text-transform: uppercase
+            // color: $color-Black
+            display: flex
+            justify-content: center
+            align-items: center
+            transform: translate(0, 70px)
+            transition: all 0.3s ease 0s
+            &:hover
+                // box-shadow: 0 0 3px 3px $color-graphite
+
+    &__fav-img-box
+        position: absolute
+        top: 0
+        left: auto
+        right: 0
+    &__fav-img
+        width: 100%
+        color: transparent
+        transition: all 0.3s ease 0s
+    &__text
+        font-size: $text-font-size-desktop
+        margin: 0 0 10px 0
+    &__price,
+    &__currency
+        font-weight: bold
+
+.fav-btn
+    &:hover>.goods__fav-img
+        transform: scale(115%)
+.fav-btn._active
+    .goods__fav-img
+        // color: $color-Black
+
+.page-pagination
+    &__block
+        width: 100%
+        min-height: 50px
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+        align-items: center
+    &__nav
+        grid-column-start: 3
+    &__list
+        width: 100%
+        display: flex
+    &__link-btn
+        width: 164px
+        grid-column-start: 4
+        justify-self: end
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        min-height: 50px
+        // background-color: $color-graphite
+        border-radius: 5px
+        font-weight: bold
+        font-size: 14px
+        line-height: 150%
+        text-transform: uppercase
+        // color: $color-White
+    &__item
+        margin: 0 3px
+    &__link
+        font-size: 14px
+        line-height: 150%
+        // color: $color-Gray-pagination
+        padding: 5px
+    &__link.current
+        // color: $color-Black

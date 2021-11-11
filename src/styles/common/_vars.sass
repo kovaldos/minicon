@@ -1,0 +1,75 @@
+// Размеры
+$siteWidth: 1920px
+$container-max-width: 1250px
+$container-width: 100%
+$container-padding: 0 40px
+$container-padding-tablet: 0 20px
+$container-padding-mob: 0 15px
+
+// Шрифт
+$font-primary: "Arimo", sans-serif
+$text-font-size-desktop: 16px
+// $text-font-size-fablet: 15px
+// $text-font-size-mobile: 14px
+$font-size-section-title: 36px
+$font-size-section-title-tablet: 28px
+$font-size-section-title-mob: 22px
+
+// Цвета
+
+$color-Black: #000000
+$color-Black--footer-bg: #2D2D2D
+$color-White: #ffffff
+$color-placeholder: #ADADAD
+$color-Gray--header: #6C6966
+$color-Red-primary: #D53834
+$color-Red-red-btn: #D24A43
+$color-Gray-pagination: #A3A3A3
+$color-breadcrumbs: #515151
+$color-Error: #881818d2
+
+// Mixins
+
+@mixin flex-jcfs-aic
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+@mixin flex-jcsb-aic
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+@mixin flex-jcc-aic
+	display: flex
+	justify-content: center
+	align-items: center
+
+@mixin flex-fxdc-jcfs-aifs
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: flex-start
+
+@mixin flex-fxdc-jcsb-aifs
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-start
+
+@mixin flex-fxdc-jcc-aifs
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+
+@mixin flex-fxdc-jcfe-aic
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	align-items: center
+
+
+@mixin width-height-100-percent
+	width: 100%
+	height: 100%

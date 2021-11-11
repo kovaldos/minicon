@@ -1,0 +1,224 @@
+@import ./_vars
+
+.modal
+    // background-color: $color-graphite
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 10
+    opacity: 0
+    visibility: hidden
+    transition: all 0.8s ease 0s
+    overflow-y: auto
+    overflow-x: hidden
+    &__body
+        min-height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 30px
+    &__content
+        max-width: 830px
+        min-height: 530px
+        padding: 70px 115px 65px 115px
+        position: relative
+        background: #FFFFFF
+        z-index: 5
+        transform: translate(0, -100%)
+        transition: all 0.8s ease 0s
+        opacity: 0
+    &__content._active
+        transform: translate(0, 0)
+        opacity: 1
+    &__close
+        position: absolute
+        top: 0
+        right: 0
+        padding: 20px
+        background-color: transparent
+        transition: transform 0.3s ease 0s
+        svg
+            // color: $color-Black
+        &:hover
+            transform: scale(1.1)
+    &__form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        // gap: 30px
+        margin: 32px 0 0 0
+        width: 100%
+        height: 100%
+        input
+            width: 100%
+            min-height: 50px
+            // background-color: $color-Gray_4
+            border: 1px solid #D9D9D9
+            padding: 14px 20px
+            font-size: 16px
+            line-height: 140%
+            // color: $color-Black
+            margin-bottom: 30px
+            &:placeholder
+
+    &__search
+        max-width: 950px
+        width: 100%
+        height: 100%
+        min-height: unset
+        // background-color: $color-graphite
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 5px
+        position: relative
+        .close-modal
+            top: -50px
+            right: 0
+            svg
+                // color: $color-White
+    &__search-form
+        max-width: 930px
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        input
+            max-width: 930px
+            width: 100%
+            // border: 1px solid $color-White
+            padding: 13px 20px
+            font-size: 16px
+            line-height: 140%
+            // background-color: $color-graphite
+            // color: $color-White
+            appearance: none
+
+    &__search-button
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%)
+        left: auto
+        right: 20px
+        &::placeholder
+            font-size: 16px
+            line-height: 140%
+            // color: $color-Gray_3
+
+    &__title
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+        text-align: center
+    &__text
+        font-size: 16px
+        line-height: 140%
+        max-width: 254px
+        width: 100%
+        text-align: center
+        margin: 22px 0 0 0
+    &__sign-in-content
+        max-width: 460px
+        width: 100%
+        min-height: 410px
+        padding: 50px 30px 38px 30px
+    &__sign-in-btn-block
+        width: 100%
+        max-width: 350px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        // gap: 30px
+        margin: 10px 0 20px 0
+    &__sign-in-btn-in
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 100px
+        width: 100%
+        min-height: 50px
+        // background-color: $color-graphite
+        border-radius: 5px
+        // color: $color-White
+        font-size: 14px
+        line-height: 150%
+        text-transform: uppercase
+        &:hover
+            // box-shadow: 0 0 3px 3px $color-graphite
+    &__sign-in-btn-up
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 220px
+        width: 100%
+        min-height: 50px
+        // border: 1px solid $color-graphite
+        border-radius: 5px
+        font-size: 14px
+        line-height: 150%
+        text-transform: uppercase
+        // color: $color-graphite
+        &:hover
+            // box-shadow: 0 0 3px 3px $color-graphite
+    &__sign-in-if-forget
+        width: 100%
+        height: 100%
+        text-align: left
+        font-size: 16px
+        line-height: 140%
+        // color: $color-Gray_3
+    .if-forget__link
+        font-size: 16px
+        line-height: 140%
+        // color: $color-Gray_3
+        &:hover
+            text-decoration: underline
+    &__sign-up-content
+        padding: 50px 30px
+        max-width: 460px
+        width: 100%
+        min-height: 620px
+    &__sign-up-btn-in
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 100px
+        width: 100%
+        min-height: 50px
+        // border: 1px solid $color-graphite
+        border-radius: 5px
+        font-size: 14px
+        line-height: 150%
+        text-transform: uppercase
+        // color: $color-graphite
+        background-color: transparent
+        &:hover
+            // box-shadow: 0 0 3px 3px $color-graphite
+    &__sign-up-btn-up
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 220px
+        width: 100%
+        min-height: 50px
+        // background-color: $color-graphite
+        border-radius: 5px
+        // color: $color-White
+        font-size: 14px
+        line-height: 150%
+        text-transform: uppercase
+        &:hover
+            // box-shadow: 0 0 3px 3px $color-graphite
+
+.modal._active
+    opacity: 1
+    visibility: visible
+
+.modal._active .modal__content
+    transform: translate(0, 0)
+    opacity: 1

@@ -1,0 +1,109 @@
+@import ./_vars
+
+.header
+	width: 100%
+	min-height: 120px
+	padding: 22px 0 60px 0
+	position: relative
+	overflow: hidden
+	&_top
+		width: 100%
+		@include flex-jcsb-aic
+		margin: 0 0 23px 0
+	&__logo-box
+		max-width: 242px
+		@include width-height-100-percent
+		@include flex-jcc-aic
+	&__search
+		position: relative
+		flex: 1 1 auto
+		margin: 0 60px
+		height: 35px
+		&-input
+			border: 1px solid #CECECE
+			box-sizing: border-box
+			border-radius: 50px
+			appearance: none
+			width: 100%
+			height: 100%
+			font-size: 14px
+			line-height: 16px
+			padding: 9px 65px 10px 15px
+			&:placeholder
+				color: $color-placeholder
+		&-btn
+			width: 50px
+			height: 100%
+			position: absolute
+			top: 50%
+			left: auto
+			right: 0
+			transform: translate(0, -50%)
+			border-top-right-radius: 50px
+			border-bottom-right-radius: 50px
+			background-color: transparent
+	&__mail-us
+		width: 100%
+		max-width: 169px
+		height: 21px
+		@include flex-jcc-aic
+		&-link
+			@include width-height-100-percent
+			@include flex-jcsb-aic
+			font-size: 18px
+			line-height: 21px
+			color: #6C6966
+
+	&__menu
+		width: 100%
+		height: 60px
+		position: absolute
+		left: 0
+		right: 0
+		border-top: 1px solid rgba(108, 105, 102, 0.5)
+		border-bottom: 1px solid rgba(108, 105, 102, 0.5)
+		&-container
+			@include width-height-100-percent
+
+		&-body
+			@include width-height-100-percent
+			@include flex-jcc-aic
+	&__list
+		@include width-height-100-percent
+		@include flex-jcsb-aic
+		padding: 10px 0
+		&-item
+			@include width-height-100-percent
+			border-right: 1px solid rgba(108, 105, 102, 0.5)
+			&:first-of-type
+				border-left: 1px solid rgba(108, 105, 102, 0.5)
+		&-link
+			@include width-height-100-percent
+			@include flex-jcc-aic
+			padding: 12px
+			color: $color-Gray--header
+			font-weight: bold
+			font-size: 18px
+			line-height: 21px
+			&:hover
+				text-decoration: underline
+
+// burger-menu
+.menu
+	&__icon
+		display: none
+
+// Breadcrumbs
+
+.breadcrumbs
+	&__content
+		width: 100%
+		padding: 20px 0
+	&__list
+		display: flex
+		justify-content: flex-start
+	&__item,
+	&__link
+		color: $color-breadcrumbs
+		font-size: 12px
+		line-height: 14px

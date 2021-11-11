@@ -1,0 +1,217 @@
+@import ./../common/_vars
+
+.good-card
+    margin: 28px 0 0 0
+    &__content
+        width: 100%
+        display: flex
+        justify-content: space-between
+        column-gap: 10px
+        margin: 65px 0 0 0
+    &__images,
+    &__info
+        flex: 1 1 50%
+    &__images
+        padding: 0 117px 0 0
+    &__heading
+        margin: 0 0 20px 0
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 41px
+        // color: $color-Black
+        margin: 0 0 5px 0
+    &__vendore-code,
+    &__available-colors
+        font-size: 16px
+        line-height: 140%
+        // color: $color-Gray_3
+    &__price
+        span
+            font-weight: bold
+            font-size: 24px
+            line-height: 150%
+            // color: $color-Black
+    &__add-to-cart-block
+        margin: 20px 0 0 0
+    &__form
+        display: flex
+        flex-direction: column
+    &__form-inputs
+        margin: 10px 0 32px 0
+    &__label
+        width: 25px
+        height: 25px
+        position: relative
+        display: inline-block
+        cursor: pointer
+        margin: 0 13px 0 0
+        input
+            position: absolute
+            z-index: -1
+            opacity: 0
+        .span01,
+        .span02
+            display: inline-flex
+            align-items: center
+            user-select: none
+            &::before
+                content: ''
+                display: inline-block
+                width: 25px
+                height: 25px
+                flex-shrink: 0
+                flex-grow: 0
+                border-radius: 100%
+                background: url('/assets/images/svg/black-circle.svg')
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: 100%
+
+        .span02
+            &::before
+                background: url('/assets/images/svg/white-circle.svg')
+        input:not(:disabled):not(:checked)+span:hover::before
+            // box-shadow: 0px 0px 3px 3px $color-Gray_3
+        /* стили для чекбокса, находящегося в фокусе */
+        input:focus+span::before
+            // box-shadow: 0px 0px 3px 3px $color-Gray_1
+        /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+        input:focus:not(:checked)+span::before
+            // box-shadow: 0px 0px 3px 3px $color-graphite
+        input:checked+span::before
+            // box-shadow: 0px 0px 3px 3px $color-graphite
+    &__select-wrapper
+        position: relative
+        max-width: 222px
+        width: 100%
+        min-height: 50px
+    &__select
+        width: 100%
+        // border: 1px solid $color-Black
+        // background-color: $color-Gray_4
+        font-size: 16px
+        line-height: 140%
+        // color: $color-black_3
+        padding: 14px 30px 14px 20px
+        appearance: none
+        cursor: pointer
+    &__select-icon
+        width: 18px
+        height: 18px
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 50%
+        left: auto
+        right: 7px
+        transform: translate(0, -50%)
+        pointer-events: none
+        transition: all 0.3s ease 0s
+    &__select-wrapper.icon-rotated>
+        .good-card__select-icon
+            transform: translate(0, -49%) rotate(180deg)
+    &__btn
+        max-width: 213px
+        min-height: 50px
+        // background-color: $color-graphite
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 5px
+        font-size: 14px
+        line-height: 150%
+        text-transform: uppercase
+        // color: $color-White
+        margin: 15px 0 0 0
+    &__size-table
+        margin: 30px 0 0 0
+    &__link-to-size-table
+        font-size: 16px
+        line-height: 18px
+        text-decoration-line: underline
+        // color: $color-black_3
+        padding: 10px
+        margin: -10px
+    &__benefits
+        margin: 28px 0 0 0
+    &__benefit
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+    &__benefit-img-box
+        margin: 0 10px 0 0
+    &__benefit-text
+        font-size: 16px
+        line-height: 140%
+        margin: 0 0 10px 0
+    &__tabs
+        margin: 49px 0 0 0
+        min-height: 235px
+    &__tabs-navbar
+        display: flex
+        justify-content: space-between
+        padding: 0 20px 6px 0
+        // border-bottom: 3px solid $color-Gray_5
+        margin: 0 0 50px 0
+    &__tabs-switch
+        width: fit-content
+        position: relative
+        font-size: 18px
+        line-height: 21px
+        display: flex
+        justify-content: flex-start
+        background-color: transparent
+        padding: 6px
+        margin: -6px
+        // color: $color-Black
+        border-radius: 5px
+        &:hover
+            // box-shadow: 0 0 2px 2px $color-graphite
+        &::after
+            content: ''
+            display: block
+            width: calc(100% - 12px)
+            // background-color: $color-black_3
+            height: 3px
+            position: absolute
+            top: 100%
+            left: auto
+            visibility: hidden
+            opacity: 0
+            transition: all 0.3s ease 0s
+    &__tabs-switch._active
+        &::after
+            visibility: visible
+            opacity: 1
+    &__tabs-text
+        font-size: 16px
+        line-height: 140%
+        // color: $color-Black
+        padding: 0 0 5px 0
+.tabs
+    &__item
+        display: none
+    &__item._active
+        display: block
+
+.slider-vertical
+    height: 753px
+    .swiper-button-prev,
+    .swiper-button-next
+        top: 50%
+        display: none
+    .swiper-button-next
+        right: 0
+    .swiper-button-prev
+        left: 0
+
+.medium-zoom-image--opened
+    z-index: 11
+.medium-zoom--opened
+    .medium-zoom-overlay
+        z-index: 10
+
+.additional
+    margin: 0 0 0 0

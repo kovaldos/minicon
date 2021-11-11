@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/fav.png">
+    <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=aaf0ec15-8970-4357-b2ef-1c76ab7adb11&amp;lang=ru_RU"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header_top">
+          <div class="header__logo-box"><a class="header__logo-link" href="home-page.html"><img class="header__logo-img" src="assets/images/logo.png" alt="Логотип Миникон"></a></div>
+          <div class="header__search"> 
+            <input class="header__search-input" id="search" type="search" name="header search" placeholder="Поиск">
+            <button class="header__search-btn">
+              <svg class="header__search-icon" width="20" height="20">
+                <use xlink:href="./assets/images/sprite.svg#search-icon" alt="Иконка лупы"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header__mail-us"><a class="header__mail-us-link" href="mailto:info@minikon.ru"> 
+              <svg class="header__mail-us-icon" width="28" height="20">
+                <use xlink:href="./assets/images/sprite.svg#mail-us-icon" alt="Иконка конверта"></use>
+              </svg><span>info@minikon.ru</span></a></div>
+        </div>
+        <div class="header__menu menu">
+          <div class="container header__menu-container">
+            <div class="header__menu-icon menu__icon"><span> </span></div>
+            <nav class="header__menu-body menu__body">
+              <ul class="header__list menu__list">
+                <li class="header__list-item menu__item"><a class="header__list-link menu__link" href="catalog.html">Каталог</a></li>
+                <li class="header__list-item menu__item"><a class="header__list-link menu__link" href="brands.html">Бренды</a></li>
+                <li class="header__list-item menu__item"><a class="header__list-link menu__link" href="about-us.html">О нас</a></li>
+                <li class="header__list-item menu__item"><a class="header__list-link menu__link" href="use.html">Применение</a></li>
+                <li class="header__list-item menu__item"><a class="header__list-link menu__link" href="documentation.html">Документация</a></li>
+                <li class="header__list-item menu__item"><a class="header__list-link menu__link" href="news.html">Новости</a></li>
+                <li class="header__list-item menu__item"><a class="header__list-link menu__link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container breadcrumbs__container"> 
+          <div class="breadcrumbs__content"> 
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="home-page.html">Главная<span>&nbsp;/&nbsp;</span></a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link _current" href="#">Мужчинам&nbsp;</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <section class="section main-banner">
+          <div class="container main-banner__container">
+            <div class="main-banner__img-box"> <img class="main-banner__img" src="assets/images/main-banner-bg.png" alt="Фото насоса"></div>
+            <div class="main-banner__heading"> 
+              <h1 class="main-banner__title">Поставки объёмных насосов&emsp;<span class="main-banner__span">для вязкой, абразивной, агрессивной жидкости и&nbsp;запасных частей.</span></h1>
+            </div><a class="main-banner__btn red-btn" href="catalog.html">Каталог</a>
+          </div>
+        </section>
+        <section class="section home-catalog">
+          <div class="container home-catalog__container">
+            <div class="section__heading home-catalog__heading">
+              <h2 class="section__title">Каталог</h2><a class="section__link-to-all home-catalog__link-to-all" href="catalog.html">Смотреть все</a>
+            </div>
+            <div class="home-catalog__content"><a class="home-catalog__content-item" href="#">
+                <div class="home-catalog__content-img-box"> <img class="home-catalog__content-img" src="assets/images/home-catalog-content-img1.png" alt="Фото элемента каталога"></div>
+                <div class="home-catalog__content-title"><span>Винтовые насосы</span></div></a><a class="home-catalog__content-item" href="#">
+                <div class="home-catalog__content-img-box"> <img class="home-catalog__content-img" src="assets/images/home-catalog-content-img2.png" alt="Фото элемента каталога"></div>
+                <div class="home-catalog__content-title"><span>Дозирующие насосы</span></div></a><a class="home-catalog__content-item" href="#">
+                <div class="home-catalog__content-img-box"> <img class="home-catalog__content-img" src="assets/images/home-catalog-content-img3.png" alt="Фото элемента каталога"></div>
+                <div class="home-catalog__content-title"><span>Импеллерные насосы</span></div></a><a class="home-catalog__content-item" href="#">
+                <div class="home-catalog__content-img-box"> <img class="home-catalog__content-img" src="assets/images/home-catalog-content-img4.png" alt="Фото элемента каталога"></div>
+                <div class="home-catalog__content-title"><span>Перистальтические насосы</span></div></a><a class="home-catalog__content-item" href="#">
+                <div class="home-catalog__content-img-box"> <img class="home-catalog__content-img" src="assets/images/home-catalog-content-img5.png" alt="Фото элемента каталога"></div>
+                <div class="home-catalog__content-title"><span>Компактные винтовые насосы</span></div></a><a class="home-catalog__content-item" href="#">
+                <div class="home-catalog__content-img-box"> <img class="home-catalog__content-img" src="assets/images/home-catalog-content-img6.png" alt="Фото элемента каталога"></div>
+                <div class="home-catalog__content-title"><span>Запчасти для насосов</span></div></a></div>
+          </div>
+        </section>
+        <section class="section scope-of-use">
+          <div class="container scope-of-use__container">
+            <div class="section__heading scope-of-use__heading">
+              <h2 class="section__title">Сферы применения</h2><a class="section__link-to-all scope-of-use__link-to-all" href="catalog.html">Смотреть все</a>
+            </div>
+            <div class="scope-of-use__content">
+              <div class="scope-of-use__content-item"><a class="scope-of-use__content-link" href="#">
+                  <svg class="scope-of-use__content-icon" width="80" height="80">
+                    <use xlink:href="./assets/images/sprite.svg#scope-of-use-img1" alt=""></use>
+                  </svg></a>
+                <div class="scope-of-use__content-title"> <span>Очистные сооружения</span></div>
+              </div>
+              <div class="scope-of-use__content-item"><a class="scope-of-use__content-link" href="#">
+                  <svg class="scope-of-use__content-icon" width="80" height="80">
+                    <use xlink:href="./assets/images/sprite.svg#scope-of-use-img2" alt=""></use>
+                  </svg></a>
+                <div class="scope-of-use__content-title"> <span>Бумажная промышленность</span></div>
+              </div>
+              <div class="scope-of-use__content-item"><a class="scope-of-use__content-link" href="#">
+                  <svg class="scope-of-use__content-icon" width="80" height="80">
+                    <use xlink:href="./assets/images/sprite.svg#scope-of-use-img3" alt=""></use>
+                  </svg></a>
+                <div class="scope-of-use__content-title"> <span>Горная промышленность</span></div>
+              </div>
+              <div class="scope-of-use__content-item"><a class="scope-of-use__content-link" href="#">
+                  <svg class="scope-of-use__content-icon" width="80" height="80">
+                    <use xlink:href="./assets/images/sprite.svg#scope-of-use-img4" alt=""></use>
+                  </svg></a>
+                <div class="scope-of-use__content-title"> <span>Пищевая промышленность</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section for-liquid">
+          <div class="container for-liquid__container">
+            <div class="section__heading for-liquid__heading">
+              <h2 class="section__title">Насосы для жидкостей</h2><a class="section__link-to-all for-liquid__link-to-all" href="catalog.html">Смотреть все</a>
+            </div>
+            <div class="for-liquid__content">
+              <div class="for-liquid__content-item"><a class="for-liquid__content-link" href="#">
+                  <div class="for-liquid__content-img-box"><img class="for-liquid__content-img" src="assets/images/for-liquid-img1.png" alt="Фото изделия"></div></a>
+                <div class="for-liquid__content-title"> <span>Для абразивной жидкости</span>
+                  <ul class="for-liquid__content-list">
+                    <li class="for-liquid__content-list-item">Осадок</li>
+                    <li class="for-liquid__content-list-item">Известь</li>
+                    <li class="for-liquid__content-list-item">Шлам</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="for-liquid__content-item"><a class="for-liquid__content-link" href="#">
+                  <div class="for-liquid__content-img-box"><img class="for-liquid__content-img" src="assets/images/for-liquid-img2.png" alt="Фото изделия"></div></a>
+                <div class="for-liquid__content-title"> <span>Для вязкой жидкости</span>
+                  <ul class="for-liquid__content-list">
+                    <li class="for-liquid__content-list-item">Флокулянт</li>
+                    <li class="for-liquid__content-list-item">Крахмал </li>
+                    <li class="for-liquid__content-list-item">Клей</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="for-liquid__content-item"><a class="for-liquid__content-link" href="#">
+                  <div class="for-liquid__content-img-box"><img class="for-liquid__content-img" src="assets/images/for-liquid-img3.png" alt="Фото изделия"></div></a>
+                <div class="for-liquid__content-title"> <span>Для агрессивной жидкости</span>
+                  <ul class="for-liquid__content-list">
+                    <li class="for-liquid__content-list-item">Коагулянт</li>
+                    <li class="for-liquid__content-list-item">Кислота</li>
+                    <li class="for-liquid__content-list-item">Щелочь</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section subscribe">
+          <div class="container subscribe__container">
+            <div class="section__heading subscribe__heading"> 
+              <h2 class="section__title subscribe__title">Заказать обратный звонок</h2>
+              <h3 class="section__sub-title subscribe__sub-title">Заполните форму ниже и мы свяжемся с вами в ближайшее время.</h3>
+            </div>
+            <form class="subscribe__form" action="#">
+              <div class="subscribe__form-inputs">
+                <input class="subscribe__form-input" type="text" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]{1,20}" title="Имя может содержать только русские или латинские буквы, быть не короче 1 и не длиннее 20 символов">
+                <input class="subscribe__form-input" id="tel" type="tel" placeholder="Телефон" required>
+                <button class="subscribe__btn red-btn modal__link" type="submit" data-href="#">заказать</button>
+              </div>
+              <div class="subscribe__agreement">
+                <div class="subscribe__agreement-text">Нажимая на кнопку, Вы даёте согласие на обработку <a class="subscribe__agreement-link" href="#">персональных данных</a></div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="section about-us">
+          <div class="container about-us__container">
+            <div class="about-us__content"> 
+              <div class="about-us__slider">
+                <div class="mySwiper swiper-container">
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide"> 
+                      <div class="about-us__slider-item"> <img class="about-us__slider-img" src="assets/images/about-us-slide1.png" alt="карточка слайда"></div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="about-us__slider-item"> <img class="about-us__slider-img" src="assets/images/about-us-slide1.png" alt="карточка слайда"></div>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <div class="about-us__slider-item"> <img class="about-us__slider-img" src="assets/images/about-us-slide1.png" alt="карточка слайда"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="about-us__text-block"> 
+                <div class="section__heading about-us__heading"> 
+                  <h2 class="section__title about-us__title">О нас</h2>
+                </div>
+                <div class="about-us__text-box"> 
+                  <p class="about-us__text">Компания «Миникон» — это дистрибьютор европейских производителей промышленного насосного оборудования и запасных частей. Нашими услугами пользуются клиенты с различных регионов Российской Федерации: Москвы и Московской области, Урала, Перми, Челябинска, Тюмени, Уфы, Санкт-Петербурга. Мы сотрудничаем с проектными организациями, сервисными компаниями муниципальными предприятиями и научными институтами.</p>
+                  <p class="about-us__text">Наша организация была основана в Санкт-Петербурге 10 лет назад. Основной деятельностью является поставка и обслуживание объемных насосов: эксцентрико-шнековых или винтовых, перистальтических, мембранных, включая поставку запасных частей к ним.</p>
+                </div>
+              </div>
+              <div class="about-us__benefits-block"> 
+                <div class="about-us__benefits-item"> 
+                  <div class="about-us__benefits-img-box"> 
+                    <svg class="about-us__benefits-icon" width="60" height="60">
+                      <use xlink:href="./assets/images/sprite.svg#benefits-icon1" alt="иконка документа с печатью"></use>
+                    </svg>
+                  </div>
+                  <div class="about-us__benefits-title"> <span class="about-us__benefits-span">Предоставляем гарантию</span></div>
+                </div>
+                <div class="about-us__benefits-item"> 
+                  <div class="about-us__benefits-img-box"> 
+                    <svg class="about-us__benefits-icon" width="60" height="60">
+                      <use xlink:href="./assets/images/sprite.svg#benefits-icon2" alt="иконка автомобиля доставки"></use>
+                    </svg>
+                  </div>
+                  <div class="about-us__benefits-title"> <span class="about-us__benefits-span">Осуществляем курьерскую доставку</span></div>
+                </div>
+                <div class="about-us__benefits-item"> 
+                  <div class="about-us__benefits-img-box"> 
+                    <svg class="about-us__benefits-icon" width="60" height="60">
+                      <use xlink:href="./assets/images/sprite.svg#benefits-icon3" alt="иконка рукопожатия"></use>
+                    </svg>
+                  </div>
+                  <div class="about-us__benefits-title"> <span class="about-us__benefits-span">Приветствуем появление новых диллеров</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container footer__container"> 
+        <div class="footer__row"> 
+          <div class="footer__col col-1"> 
+            <ul class="footer__list"> 
+              <li class="footer__list-item"> <span class="footer__list-span">Санкт-Петербург, ул. Профессора попова 23</span></li>
+              <li class="footer__list-item"> <a class="footer__list-link footer__list-link_tel" href="tel:+78123207096">+7 (812) 320-70-96</a><a class="footer__list-link footer__list-link_email" href="info@minikon.ru">info@minikon.ru</a></li>
+            </ul>
+          </div>
+          <div class="footer__col col-2">
+            <ul class="footer__list"> 
+              <li class="footer__list-item"> <span class="footer__list-span">Москва, ул. Лодочная 3</span></li>
+              <li class="footer__list-item"> <a class="footer__list-link footer__list-link_tel" href="tel:+74956457096">+7 (495) 645-70-96</a><a class="footer__list-link footer__list-link_email" href="mail@minikon.ru">mail@minikon.ru</a></li>
+            </ul>
+          </div>
+          <div class="footer__col col-3">
+            <ul class="footer__list"> 
+              <li class="footer__list-item"> <span class="footer__list-span">Екатеринбург, ул. Ткачей 2Б</span></li>
+              <li class="footer__list-item"> <a class="footer__list-link footer__list-link_tel" href="tel:+73433021778">+7 (343) 302-17-78</a><a class="footer__list-link footer__list-link_email" href="info@minikon.ru">info@minikon.ru</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal01">
+      <div class="modal__body">
+        <div class="modal__content modal__search">
+          <button class="modal__close close-modal" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/images/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+          <form class="modal__search-form" action="#">
+            <input type="search" placeholder="Что вы ищете?"><a class="modal__search-button" href="#">
+              <svg width="21" height="21">
+                <use xlink:href="./assets/images/sprite.svg#search-icon"></use>
+              </svg></a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__sign-in" id="modal02">
+      <div class="modal__body modal__sign-in-body">
+        <div class="modal__content modal__sign-in-content">
+          <button class="modal__close close-modal" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/images/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+          <p class="modal__title modal__sign-in-title">Вход</p>
+          <form class="modal__form modal__sign-in-form" action="#">
+            <input id="sign-in-input" type="tel" placeholder="Телефон" required>
+            <input type="password" placeholder="Пароль" required>
+            <div class="modal__btn-block modal__sign-in-btn-block">
+              <button class="modal__sign-in-btn-in" type="submit">Войти</button><a class="modal__link modal__sign-in-btn-up" href="#modal03">зарегистрироваться</a>
+            </div>
+            <div class="modal__sign-in-if-forget">
+              <p class="if-forget__text">Забыли пароль? <a class="if-forget__link" href="#"> Восстановить пароль</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-done" id="modal03">
+      <div class="modal__body modal__sign-up-body">
+        <div class="modal__content modal__sign-up-content">
+          <button class="modal__close close-modal" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/images/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+          <p class="modal__title modal__sign-up-title">Регистрация</p>
+          <form class="modal__form" action="#">
+            <input type="text" name="sign-up" placeholder="Имя" required>
+            <input type="text" name="sign-up" placeholder="Фамилия">
+            <input id="sign-up-input" type="tel" placeholder="Телефон" required>
+            <input type="password" placeholder="Пароль" required>
+            <input type="password" placeholder="Повторите пароль" required>
+            <div class="modal__btn-block modal__sign-in-btn-block modal__sign-up-btn-block"><a class="modal__link modal__sign-in-btn-in modal__sign-up-btn-in" href="#modal02">Войти</a>
+              <button class="modal__sign-in-btn-up modal__sign-up-btn-up" type="submit">зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="assets/scripts/imask.min.js"></script>
+    <script src="assets/scripts/accordion.min.js"></script>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/medium-zoom.min.js"></script>
+    <script src="assets/scripts/focus-visible.min.js"></script>
+    <script src="assets/scripts/modal.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

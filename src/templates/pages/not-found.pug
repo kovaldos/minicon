@@ -1,0 +1,16 @@
+extends ../template
+
+block variables
+    - var title = 'Страница не найдена'
+
+block content
+    .wrapper
+        section.section.not-found 
+            .container
+                .not-found__content
+                    h1.not-found__title Страница не найдена
+                    .not-found__text-block 
+                        p.not-found__text Возможно, она была удалена или никогда не&nbsp;существовала. Вы&nbsp;можете вернуться на&nbsp;главную, чтобы найти нужную информацию.
+                    a.not-found__link(href="home-page.html") На главную
+                    .not-found__inner-content 404
+                    
