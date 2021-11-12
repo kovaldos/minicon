@@ -15,25 +15,54 @@ header.header
 						use(xlink:href="./assets/images/sprite.svg#mail-us-icon" alt="Иконка конверта")
 					span info@minikon.ru
 		.header__menu.menu
-			.container.header__menu-container
-				.header__menu-icon.menu__icon
-					span  
-				nav.header__menu-body.menu__body
-					ul.header__list.menu__list
-						li.header__list-item.menu__item
-							a(href="catalog.html").header__list-link.menu__link Каталог
-						li.header__list-item.menu__item
-							a(href="brands.html").header__list-link.menu__link Бренды
-						li.header__list-item.menu__item
-							a(href="about-us.html").header__list-link.menu__link О нас
-						li.header__list-item.menu__item
-							a(href="use.html").header__list-link.menu__link Применение
-						li.header__list-item.menu__item
-							a(href="documentation.html").header__list-link.menu__link Документация
-						li.header__list-item.menu__item
-							a(href="news.html").header__list-link.menu__link Новости
-						li.header__list-item.menu__item
-							a(href="contacts.html").header__list-link.menu__link Контакты
+			.header__menu-icon.menu__icon
+				span  
+			nav.header__menu-body.menu__body
+				ul.header__list.menu__list
+					li.header__list-item.menu__item.header__list-item_drop-down.menu__item_drop-down
+
+						.drop-down-block 
+							.drop-down-col.col-1 
+								ul.drop-down-list
+									li.drop-down-item 
+										a.drop-down-link(href="#") Винтовые насосы 
+										ul.drop-down__sub-list
+											li.drop-down__sub-list-item 
+												a.drop-down__sub-list-link(href="#") Компактные насосы PCM
+											li.drop-down__sub-list-item 
+												a.drop-down__sub-list-link(href="#") Винтовые насосы PCM
+											li.drop-down__sub-list-item 
+												a.drop-down__sub-list-link(href="#") Компактные насосы Kiesel
+											li.drop-down__sub-list-item 
+												a.drop-down__sub-list-link(href="#") Винтовые насосы Johstadt
+									li.drop-down-item 
+										a.drop-down-link(href="#") Мембранные насосы 
+										ul.drop-down__sub-list
+											li.drop-down__sub-list-item 
+												a.drop-down__sub-list-link(href="#") Мембранные насосы Fimars
+											li.drop-down__sub-list-item 
+												a.drop-down__sub-list-link(href="#") Мембранные насосы Lagoa
+							.drop-down-col.col-2 
+								ul.drop-down-list
+									li.drop-down-item 
+										a.drop-down-link(href="#") Запчасти для насосов
+									li.drop-down-item 
+										a.drop-down-link(href="#") Импеллерные насосы
+									li.drop-down-item 
+										a.drop-down-link(href="#") Перистальтические насосы
+						a(href="catalog.html").header__list-link.menu__link Каталог
+					li.header__list-item.menu__item
+						a(href="brands.html").header__list-link.menu__link Бренды
+					li.header__list-item.menu__item
+						a(href="about-us.html").header__list-link.menu__link О нас
+					li.header__list-item.menu__item
+						a(href="use.html").header__list-link.menu__link Применение
+					li.header__list-item.menu__item
+						a(href="documentation.html").header__list-link.menu__link Документация
+					li.header__list-item.menu__item
+						a(href="news.html").header__list-link.menu__link Новости
+					li.header__list-item.menu__item
+						a(href="contacts.html").header__list-link.menu__link Контакты
 
 	nav.breadcrumbs
 		.container.breadcrumbs__container 
